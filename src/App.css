@@ -1,0 +1,45 @@
+.page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+form{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.movies{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*grid template columns le estamos diciendo como se tienen 
+  que comportar las columnas dentro de este grid y que repita y que tenga que hacer autofit(que ocupe el espacio disponible 200px si no entonces 1:fr) */
+  gap: 32px; /*que tenga espacio entre ellos*/
+
+}
+
+.movie{
+  text-align: center;
+}
+
+.movie h3, .movie p {
+  padding: 0;
+  margin: 0;
+}
+
+.movies img {
+  border-radius: 5px;
+}
